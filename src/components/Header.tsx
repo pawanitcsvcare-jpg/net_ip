@@ -253,6 +253,7 @@ export default function Header() {
                   <span>K</span>
                 </div>
               </div>
+              <div className="ai-mode-button-parent"><i className="ri-search-eye-line"></i> AI Mode</div>
 
               <div 
                 className="custom-search-dropdown p-2" 
@@ -793,7 +794,7 @@ export default function Header() {
                   </div>
                 </div>
             </div>
-            <div className="ai-mode-button-parent">AI Mode</div>
+            
             </div>
           </form>
           

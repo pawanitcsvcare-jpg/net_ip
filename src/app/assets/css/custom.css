@@ -1,14 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap);
-
 .header-logo {
     font-size: 22px;
     color: #fff;
     font-weight: 500;
-    font-family: Rubik, sans-serif;
 }
-.user-dropdown span{
-    font-family: Rubik, sans-serif;
-}
+
 
 
 .custom-search-dropdown {
@@ -86,7 +81,7 @@
 #customSearchInput{
     position: relative;
     z-index: 9999;
-    width: 500px;
+    width: 600px;
 }
 .custom-search-text strong{
     font-size: 13px;
@@ -114,8 +109,7 @@
     transition: 0.5s all ease;
         position: relative;
 }
-.top-search-under-list:hover,
-.top-search-under-list.active{
+.top-search-under-list:hover{
     background-color: #f1f3f5;
 }
 .ser2-under-glo-icon {
@@ -508,8 +502,8 @@ position: absolute;
 }
 .shortcut-globally-search-parent {
     position: absolute;
-    right: -3px;
-    top: 3px;
+    right: 95px;
+    top: 4px;
     z-index: 9999;
 }
 .shortcut-globally-search {
@@ -587,44 +581,60 @@ div#btnGroupVerticalDrop3-open {
     max-height: 430px;
     overflow: auto;
 }
-
-#topnav-menu-content .dropdown-toggle:after {
-    vertical-align: .255em;
-    content: "";
-    border: .3em solid #0000;
-    border-top-color: currentColor;
-    border-bottom: 0;
-    margin-left: .255em;
-    display: none;
-}
-.gf-filter-item.gf-module-trigger.show{
-    background-color: #dbeaee;
-    border: 1px solid #dbeaee;
-}
-.apexcharts-legend-group.apexcharts-legend-group-1.apexcharts-legend-group-vertical{
-    flex-direction: row;
-}
-.cursor-pointer{
-    cursor: pointer;
-}
 .ai-mode-button-parent {
-    border-radius: 16px;
-    padding: 7px 25px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 500;
-    font-size: 14px;
     color: #0c768a;
-    background-color: #0c768a;
     cursor: pointer;
-    border: 2px solid transparent;
-    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #14e137, #00bed8, #d2d517, #ffe73a);
+    background-color: #0c768a;
+    /* background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #14e137, #00bed8, #d2d517, #ffe73a); */
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    transition: all 0.5s ease;
+    border: 2px solid #0000;
+    border-radius: 12px;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .5s;
+    display: inline-flex;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 99999;
+    background-color: #dbebee;
 }
 .ai-mode-button-parent:hover {
-    transition: all 0.5s ease;
     background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #ffe73a, #d2d517, #00bed8, #14e137);
+    transition: all .5s;
+}
+
+/* Navigation Search Suggestions Styles */
+.nav-search-suggestions {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.suggestions-header {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.suggestions-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa !important;
+    border-color: #dee2e6;
+}
+
+.suggestion-item:active {
+    background-color: #e9ecef !important;
 }

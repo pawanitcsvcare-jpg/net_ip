@@ -73,7 +73,7 @@ body:not(.vertical-collpsed) .app-search {
     border: none;
     height: 38px;
     padding-left: 40px;
-    padding-right: 50px;
+    padding-right: 145px;
     background-color: var(--bs-topbar-search-bg);
     -webkit-box-shadow: none;
     box-shadow: none;
