@@ -5,7 +5,6 @@ import { ApexOptions } from "apexcharts";
 
 // Dynamically import Chart to avoid SSR issues
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
-
 export default function BillingChart() {
   const options: ApexOptions = {
     chart: {
@@ -15,9 +14,9 @@ export default function BillingChart() {
     },
     plotOptions: {
       bar: {
-        horizontal: false,
+         horizontal: false,
         columnWidth: "70%",
-        endingShape: "rounded"
+        borderRadius: 6
       }
     },
     dataLabels: { enabled: false },
